@@ -1,0 +1,52 @@
+
+
+public class Aula{
+
+
+    public static void main(String[] args){
+
+        // System.out.println(fatorial(3));
+        // System.out.println(somatorio(4));
+        // System.out.println(fibonacci(6));
+
+        System.out.println(sumKJ(2,11));
+    }
+    
+
+
+
+    // 1. Modele e implemente um método recursivo que calcule o fatorial de um número n passado como parâmetro.
+    public static int fatorial(int n){
+        if(n == 0) return 1;
+
+        return n * fatorial(n-1);
+    }
+
+    // 1. Modele e implemente um método recursivo que calcule o somatório de um número n (passado como parâmetro) até 0.
+    public static int somatorio(int n){
+        if(n == 0) return 0;
+
+        return n + somatorio(n-1);
+    }
+
+    // 1. Modele e implemente um método recursivo que calcule o n-ésimo número da sequência de fibonacci.
+    public static int fibonacci(int n){
+        if(n < 2) return n;
+
+        return fibonacci(n-1) + fibonacci(n-2);
+    }
+
+    //1. Modele e implemente um método recursivo que calcule o somatório dos números inteiros entre os números k e j, passados como parâmetro.
+    public static int sumKJ(int k, int j){
+        if(k > j) return 0;
+
+        return k + j + sumKJ(k+1,j-1);
+    }
+
+    //1. Modele e implemente um método recursivo que recebe um String em retorna true se este String for um palíndrome, false caso contrário.
+    public boolean isPal(String s) {
+        if(s.length() == 1) return true;
+        
+        return 0;
+    }
+}
